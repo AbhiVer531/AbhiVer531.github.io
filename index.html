@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Verma's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome CDN ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!----top nav bar inital hidden will display for small screen ------>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Abhinav Verma</h2>    
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#what-i-do">What I Do</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/HeadShot2024.png" alt="image not working">
+                    <h2>Abhinav Verma</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#what-i-do">What I Do</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h4>Welcome</h4>
+                <h1>I'm <span class="input"></span></h1>
+                <h4>Based in College Park, Maryland</h4>
+                <a href="/Users/abhiv/Downloads/Abhi_s_DS_Resume.pdf" download class="btn">Hire Me</a>
+                <!--<a href="/Users/abhiv/Downloads/Abhinav_Verma_Resume-2024 (1).pdf" class="btn" download>Hire Me</a>-->
+            </div>
+        </div>
+    </div>
+    <!----typing effects for title content ------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["Abhinav Verma", "UX Designer", "web developer"],
+            typeSpeed: 65,
+            backSpeed: 55,
+            loop: true
+        })
+        /*displaying topnavbar on small screen size*/
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon i");
+        menuicon.addEventListener("click", function(){
+            navbar.classList.toggle("open");
+            if (icon.classList.contains("fa-bars"))
+            {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            }
+            else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        })
+    </script>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Driven by a passion for innovation and continuous learning, I'm a software developer who finds joy in bridging technology with 
+            human connection. My fascination lies in the intersection of artificial intelligence, web development, and creating meaningful 
+            user experiences. What excites me most is the endless potential of technology to solve real-world problems while building 
+            communities along the way. The dynamic nature of computer science, where every day brings new challenges and opportunities to 
+            create impact, fuels my enthusiasm for development. When I'm not coding or leading community initiatives, you'll find me 
+            exploring new technologies, collaborating with diverse teams, and finding creative ways to make technology more accessible to everyone.
+        </p>
+        <br>
+        <li>Python, Java, C, Ocaml, Rust, HTML, CSS, JavaScript, Swift, MySQL, RStudio</li>
+    </section>
+
+    <!-- What I Do Section -->
+    <section id="what-i-do">
+        <h2>What I Do</h2>
+        <li>I am comfortable with full stack coding and I have interests in new emerging technologies like Machine Learning and Artifical intelligence</li>
+        <li>But beyond that... I like playing sports like football and basketball.</li>
+        <li>I am dedicated to the gym.</li>
+        <li>I play games in my free time.</li>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences">
+        <h2>Experiences</h2>
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>Auxiliary Officer</h3>
+                    <p><strong>CSA</strong></p>
+                    <p><strong>Nov.2024 - Present</strong></p>
+                    <ul>
+                        <li>Managed logistics, budgets, and creative assets as CSA Officer, executing cultural events and fostering community engagement.</li>
+                        <li>Created presentation slides and physical graphics for events while participating in weekly strategy meetings.</li>
+                        <li>Contributed to performance, logistics, and experience committees to enhance event planning and execution.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2025 Experience -->
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>Engl101 Undergraduate TA Intern</h3>
+                    <p><strong>University of Maryland</strong></p>
+                    <p><strong>Aug.2023 - Present</strong></p>
+                    <ul>
+                        <li>Coordinated weekly meetings and crafted engaging lesson plans.</li>
+                        <li>Led lectures with easy to understand graphics.</li>
+                        <li>Introduced debate-style peer reviews, boosting participation and quality feedback .</li>
+                        <li>Designed weekly activities to ease tensions and build community.</li>
+                        <li>Overcame student reluctance with strong communication and charisma.</li>
+                        <li>Fostered a proactive environment.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2024 Experience -->
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>Founder & Developer</h3>
+                    <p><strong>ReadySetLearn</strong></p>
+                    <p><strong>June.2024 - Present</strong></p>
+                    <ul>
+                        <li>Developed an educational website for life skills.</li>
+                        <li>Designed curriculums, created content, and managed UX design and maintenance.</li>
+                        <li>Conducted feedback analysis and user testing to improve effectiveness.</li>
+                        <li>Utilized technical and creative skills to build a widely-used platform.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2023 Experience -->
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>Hackathon Team Leader</h3>
+                    <p><strong>Avande FUEL Program</strong></p>
+                    <p><strong>July.2024 - July 2024</strong></p>
+                    <ul>
+                        <li>Gained skills in tech and professional development.</li>
+                        <li>Led a team of five in creating TestTech, a personalized, gamified learning platform.</li>
+                        <li>Conducted market research to identify gaps in exam preparation methods.</li>
+                        <li>Designed app wireframe with interactive graphics, AI tutoring, and translation support.</li>
+                        <li>Managed team activities, set objectives, and ensured timely task completion.</li>
+                        <li>Demonstrated critical thinking, resourcefulness, creativity, and adaptability under tight deadlines.                        </li>
+                        <li>Delivered a live pitch.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2022 Experience -->
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>Marketing Intern</h3>
+                    <p><strong>OuterCamp</strong></p>
+                    <p><strong>Nov.2023 - Aug.2024</strong></p>
+                    <ul>
+                        <li>Applied concepts from 100 Million Dollar Offers and 100 Million Dollar Leads to marketing strategies.</li>
+                        <li>Crafted 10x value offers by bundling benefits and streamlining consumer decisions.</li>
+                        <li>Increased conversions with limited-time offers and exclusive perks to create urgency.</li>
+                        <li>Balanced creativity with data analysis to align designs with audience preferences.</li>
+                        <li>Analyzed market trends and feedback to refine strategies for evolving needs.</li>
+                        <li>Demonstrated adaptability, critical thinking, and a strong work ethic to drive growth.</li>
+                    </ul>
+                </div>
+            </div>
+            <!--hoemgoods-->
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>Merchandise Associate</h3>
+                    <p><strong>HomeGoods Tj Maxx</strong></p>
+                    <p><strong>June.2023 - Aug.2024</strong></p>
+                    <ul>
+                        <li>Adapted to changing store layouts, inventory needs, and customer demands.</li>
+                        <li>Cross-trained in multiple roles to ensure smooth operations under pressure.</li>
+                        <li>Reorganized the HomeDecor section using sales data, customer trends, and MySQL queries.</li>
+                        <li>Analyzed purchase frequency and cost to predict popular winter products.</li>
+                        <li>Collaborated with cashiers for insights to improve product placement.</li>
+                        <li>Leveraged resourcefulness and problem-solving to exceed expectations.</li>
+                        <li>Demonstrated flexibility, creativity, and a proactive approach in a dynamic retail environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project">
+                <h3>Trading Bot</h3>
+                <img src="/path/to/project1.jpg" alt="Trading Bot">
+                <p>Python-based bot using Alpaca API and FinBERT model for automated trading.</p>
+                <!--<li>Developed sentiment analysis model with 75% accuracy in predicting market</li>
+                <li>Employed backtested strategies</li>
+                <li>Machine learning for sentiment analysis over 3-day period</li>
+                <li>Risk management algorithms for dynamic trading</li>-->
+            </div>
+            <div class="project">
+                <h3>AWS DeepRacer</h3>
+                <img src="/path/to/project2.jpg" alt="AWS">
+                <p>An autonomous car that races based on reinforcement based on parameters</p>
+            </div>
+            <div class="project">
+                <h3>Discord Info Bot</h3>
+                <img src="/path/to/project3.jpg" alt="Discord Info Bot">
+                <p>A bot that responds to user with daily definitions and news aritcles</p>
+            </div>
+            <!--
+            <div class="project">
+                <h3>Data Visualizer</h3>
+                <img src="/path/to/project4.jpg" alt="Data Visualizer">
+                <p>A web tool to visualize data trends using D3.js.</p>
+            </div>
+            <div class="project">
+                <h3>Chat Application</h3>
+                <img src="/path/to/project5.jpg" alt="Chat Application">
+                <p>A real-time chat app built with Node.js and Socket.io.</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Platform</h3>
+                <img src="/path/to/project6.jpg" alt="E-commerce Platform">
+                <p>An online store built with Django and Stripe integration.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my latest <a href="/Users/abhiv/Downloads/Abhi_s_DS_Resume.pdf" download>Resume</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Please reach out if you have any questions or are interested in speaking: <a href="vabhi531@gmail.com">vabhi531@gmail.com</a></p>
+    </section>
+</body>
+</html>
